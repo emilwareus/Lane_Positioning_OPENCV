@@ -11843,7 +11843,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#importing some useful packages</span>
@@ -11869,7 +11869,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#reading in an image</span>
@@ -11901,13 +11901,13 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[2]:</div>
+<div class="prompt output_prompt">Out[3]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.image.AxesImage at 0x2d4c75ad3c8&gt;</pre>
+<pre>&lt;matplotlib.image.AxesImage at 0x18a2adc7f60&gt;</pre>
 </div>
 
 </div>
@@ -13512,7 +13512,7 @@ EP1W22pbbavdw9v/B48rs7cxFkAbAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
@@ -13626,7 +13626,7 @@ EP1W22pbbavdw9v/B48rs7cxFkAbAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -13643,7 +13643,7 @@ EP1W22pbbavdw9v/B48rs7cxFkAbAAAAAElFTkSuQmCC
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[4]:</div>
+<div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -13683,7 +13683,7 @@ EP1W22pbbavdw9v/B48rs7cxFkAbAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Build your pipeline that will draw lane lines on the test_images</span>
@@ -13795,13 +13795,12 @@ EP1W22pbbavdw9v/B48rs7cxFkAbAAAAAElFTkSuQmCC
     
     
     <span class="c1">#Defining what part of image to look at</span>
-    <span class="n">imshape</span> <span class="o">=</span> <span class="n">canny</span><span class="o">.</span><span class="n">shape</span>
     <span class="n">rows</span><span class="p">,</span> <span class="n">cols</span> <span class="o">=</span> <span class="n">canny</span><span class="o">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
-    <span class="n">bottom_left</span>  <span class="o">=</span> <span class="p">[</span><span class="n">cols</span><span class="o">*</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">rows</span><span class="o">*</span><span class="mf">0.95</span><span class="p">]</span>
-    <span class="n">top_left</span>     <span class="o">=</span> <span class="p">[</span><span class="n">cols</span><span class="o">*</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">rows</span><span class="o">*</span><span class="mf">0.6</span><span class="p">]</span>
-    <span class="n">bottom_right</span> <span class="o">=</span> <span class="p">[</span><span class="n">cols</span><span class="o">*</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">rows</span><span class="o">*</span><span class="mf">0.95</span><span class="p">]</span>
-    <span class="n">top_right</span>    <span class="o">=</span> <span class="p">[</span><span class="n">cols</span><span class="o">*</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">rows</span><span class="o">*</span><span class="mf">0.6</span><span class="p">]</span> 
-    <span class="n">vertices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="n">bottom_left</span><span class="p">,</span> <span class="n">top_left</span><span class="p">,</span> <span class="n">top_right</span><span class="p">,</span> <span class="n">bottom_right</span><span class="p">]],</span> <span class="n">dtype</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+    <span class="n">b_left</span>  <span class="o">=</span> <span class="p">[</span><span class="n">cols</span><span class="o">*</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">rows</span><span class="o">*</span><span class="mf">0.95</span><span class="p">]</span>
+    <span class="n">t_left</span>     <span class="o">=</span> <span class="p">[</span><span class="n">cols</span><span class="o">*</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">rows</span><span class="o">*</span><span class="mf">0.6</span><span class="p">]</span>
+    <span class="n">b_right</span> <span class="o">=</span> <span class="p">[</span><span class="n">cols</span><span class="o">*</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">rows</span><span class="o">*</span><span class="mf">0.95</span><span class="p">]</span>
+    <span class="n">t_right</span>    <span class="o">=</span> <span class="p">[</span><span class="n">cols</span><span class="o">*</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">rows</span><span class="o">*</span><span class="mf">0.6</span><span class="p">]</span> 
+    <span class="n">vertices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="n">b_left</span><span class="p">,</span> <span class="n">t_left</span><span class="p">,</span> <span class="n">t_right</span><span class="p">,</span> <span class="n">b_right</span><span class="p">]],</span> <span class="n">dtype</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
     <span class="n">masked_canny</span> <span class="o">=</span> <span class="n">region_of_interest</span><span class="p">(</span><span class="n">canny</span><span class="p">,</span> <span class="n">vertices</span><span class="p">)</span>
     
     
@@ -23022,7 +23021,7 @@ imageio.plugins.ffmpeg.download()</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import everything needed to edit/save/watch video clips</span>
@@ -23037,7 +23036,7 @@ imageio.plugins.ffmpeg.download()</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">process_image</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
@@ -23064,7 +23063,7 @@ imageio.plugins.ffmpeg.download()</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">white_output</span> <span class="o">=</span> <span class="s1">&#39;test_videos_output/solidWhiteRight.mp4&#39;</span>
@@ -23104,7 +23103,7 @@ imageio.plugins.ffmpeg.download()</code></pre>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>100%|███████████████████████████████████████████████████████████████████████████████▋| 221/222 [00:12&lt;00:00, 17.71it/s]
+<pre>100%|███████████████████████████████████████████████████████████████████████████████▋| 221/222 [00:10&lt;00:00, 21.93it/s]
 </pre>
 </div>
 </div>
@@ -23118,7 +23117,7 @@ imageio.plugins.ffmpeg.download()</code></pre>
 <pre>[MoviePy] Done.
 [MoviePy] &gt;&gt;&gt;&gt; Video ready: test_videos_output/solidWhiteRight.mp4 
 
-Wall time: 13.4 s
+Wall time: 11.2 s
 </pre>
 </div>
 </div>
@@ -23138,7 +23137,7 @@ Wall time: 13.4 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
@@ -23158,7 +23157,7 @@ Wall time: 13.4 s
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[9]:</div>
+<div class="prompt output_prompt">Out[10]:</div>
 
 
 
@@ -23197,7 +23196,7 @@ Wall time: 13.4 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">yellow_output</span> <span class="o">=</span> <span class="s1">&#39;test_videos_output/solidYellowLeft.mp4&#39;</span>
@@ -23237,7 +23236,7 @@ Wall time: 13.4 s
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>100%|███████████████████████████████████████████████████████████████████████████████▉| 681/682 [00:33&lt;00:00, 20.13it/s]
+<pre>100%|███████████████████████████████████████████████████████████████████████████████▉| 681/682 [00:31&lt;00:00, 19.10it/s]
 </pre>
 </div>
 </div>
@@ -23251,7 +23250,7 @@ Wall time: 13.4 s
 <pre>[MoviePy] Done.
 [MoviePy] &gt;&gt;&gt;&gt; Video ready: test_videos_output/solidYellowLeft.mp4 
 
-Wall time: 35 s
+Wall time: 32.2 s
 </pre>
 </div>
 </div>
@@ -23262,7 +23261,7 @@ Wall time: 35 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
@@ -23282,7 +23281,7 @@ Wall time: 35 s
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[11]:</div>
+<div class="prompt output_prompt">Out[12]:</div>
 
 
 
@@ -23320,7 +23319,7 @@ Wall time: 35 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">challenge_output</span> <span class="o">=</span> <span class="s1">&#39;test_videos_output/challenge.mp4&#39;</span>
@@ -23360,7 +23359,7 @@ Wall time: 35 s
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>100%|████████████████████████████████████████████████████████████████████████████████| 251/251 [00:23&lt;00:00, 10.67it/s]
+<pre>100%|████████████████████████████████████████████████████████████████████████████████| 251/251 [00:22&lt;00:00, 11.06it/s]
 </pre>
 </div>
 </div>
@@ -23374,7 +23373,7 @@ Wall time: 35 s
 <pre>[MoviePy] Done.
 [MoviePy] &gt;&gt;&gt;&gt; Video ready: test_videos_output/challenge.mp4 
 
-Wall time: 25.8 s
+Wall time: 25.2 s
 </pre>
 </div>
 </div>
@@ -23385,7 +23384,7 @@ Wall time: 25.8 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
@@ -23405,7 +23404,7 @@ Wall time: 25.8 s
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[13]:</div>
+<div class="prompt output_prompt">Out[14]:</div>
 
 
 
