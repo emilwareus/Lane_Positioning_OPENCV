@@ -11,4 +11,4 @@ To see the result of the project one can ether run the jupyter notebook with the
 
 Image Resluts: 
 
-![Image of Reslut !](https://octodex.github.com/images/yaktocat.png)
+![Image of Reslut !](https://github.com/emilwareus/Self-driving-car_Project_1/blob/master/test_images_output/solidWhiteCurve.jpg)
