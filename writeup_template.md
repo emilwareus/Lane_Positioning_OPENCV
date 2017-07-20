@@ -47,15 +47,12 @@ If you'd like to include images to show how the pipeline works, here is how to i
 
 ### 2. Identify potential shortcomings with your current pipeline
 
-  The lines need to be lowpass-filtered, as they can appear to be a bit unstable. A good way to implement this would be a moving-         avarage filter. The performance could be improved as well for
+  The lines need to be lowpass-filtered, as they can appear to be a bit unstable. A good way to implement this would be a moving-         avarage filter. The performance could be improved as well for the lanes that are not fully drawn with better parameter selection. 
 
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
-
+  There is a risk as well with the slope-filter, as it can't detect very sharp turns. But this might not be relevent, as this method       probably do not fit in more advanced driving environments anyways.
+  
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+  The Code could defentetly be more devided into functions. One function for each transformation, with an option the show the image       after processing would be great. Other more advanced methods could be used to identlfy the lanes and make it more robust. An ML         approah could prbably be benifitial. 
 
-Another potential improvement could be to ...
